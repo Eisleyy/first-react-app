@@ -1,15 +1,9 @@
-import Head from "next/head";
-export default function Home({ children, title }) {
+import Nav from "./Nav";
+export default function Layout({ children }) {
   return (
-    <div className="bg-gray-900">
-      <Head>
-        <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="container mx-auto max-w-xl pt-8 min-h-screen">
-        {children}
-      </main>
+    <div>
+      <Nav />
+      <main className="container mx-auto max-w-xl">{children}</main>
     </div>
   );
 }
