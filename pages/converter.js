@@ -43,7 +43,7 @@ const converter = () => {
           type='text'
           name='uuid'
           value={result}
-          placeholder='uuid'
+          placeholder='UUID'
           className=' appearance-none border border-gray-200 p-2 focus:outline-none focus:border-gray-500 rounded-lg '
           onChange={(event) => setResult(event.target.value)}
         />
