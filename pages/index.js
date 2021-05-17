@@ -1,3 +1,11 @@
-export default function Home() {
-  return <h1>Next.js and TailwindCSS</h1>;
+function Home() {
+  return (
+    <div className="dark:text-white">
+      <h1>
+        Trying out Next.js and TailwindCSS hosted on Netlify
+      </h1>
+    </div>
+  );
 }
+
+export default Home;
